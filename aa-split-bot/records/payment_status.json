@@ -1,0 +1,99 @@
+{
+  "bills": [
+    {
+      "bill_id": "2026-06-11_120000",
+      "total": 240.0,
+      "participants": [
+        "我",
+        "老板小明",
+        "客户小红",
+        "张三"
+      ],
+      "payer": "我",
+      "status": {
+        "老板小明": "unpaid",
+        "客户小红": "unpaid",
+        "张三": "unpaid"
+      }
+    },
+    {
+      "bill_id": "2026-07-11_203643",
+      "total": 360.0,
+      "participants": [
+        "我",
+        "张三",
+        "李四",
+        "王五"
+      ],
+      "payer": "张三",
+      "status": {}
+    },
+    {
+      "bill_id": "2026-07-11_203834",
+      "total": 500.0,
+      "participants": [
+        "我",
+        "张三",
+        "李四"
+      ],
+      "payer": "张三",
+      "status": {}
+    },
+    {
+      "bill_id": "2026-07-11_204933",
+      "total": 96.0,
+      "participants": [
+        "我",
+        "小明",
+        "王强"
+      ],
+      "payer": "我",
+      "status": {
+        "小明": "paid",
+        "王强": "unpaid"
+      }
+    },
+    {
+      "bill_id": "2026-07-11_205540",
+      "total": 240.0,
+      "participants": [
+        "我",
+        "小明",
+        "王强"
+      ],
+      "payer": "我",
+      "status": {
+        "小明": "paid",
+        "王强": "unpaid"
+      }
+    },
+    {
+      "bill_id": "2026-07-11_210023",
+      "total": 240.0,
+      "participants": [
+        "我",
+        "小明",
+        "王强"
+      ],
+      "payer": "我",
+      "status": {
+        "小明": "paid",
+        "王强": "unpaid"
+      }
+    },
+    {
+      "bill_id": "2026-07-11_210123",
+      "total": 240.0,
+      "participants": [
+        "我",
+        "小明",
+        "王强"
+      ],
+      "payer": "我",
+      "status": {
+        "小明": "paid",
+        "王强": "unpaid"
+      }
+    }
+  ]
+}
