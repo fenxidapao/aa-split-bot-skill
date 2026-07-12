@@ -103,10 +103,10 @@ aa-split-bot 是一个运行在 Hermes Agent 上的智能 Skill，用户只需�
 ## 项目文件结构
 
 ```
-aa-split-bot/
-├── SKILL.md                        # 技能主描述（含全部 5 版迭代内容）
-├── scripts/
-│   └── aa-split.py                 # 核心 Python 脚本（金额计算 + 记录保存）
+├── skill/
+|   ├── SKILL.md                    # 技能主描述（含全部 5 版迭代内容）
+|   ├── scripts/
+│        └── aa-split.py            # 核心 Python 脚本（金额计算 + 记录保存）
 ├── references/
 │   └── usage-examples.md           # 使用示例
 ├── records/                        # 账单记录目录（自动生成）
