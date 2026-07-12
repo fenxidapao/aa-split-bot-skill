@@ -37,23 +37,23 @@ aa-split-bot 是一个运行在 Hermes Agent 上的智能 Skill，用户只需�
        |
        v
 ┌──────────────────────────────────────────────────┐
-│              Hermes Agent (AI Layer)              │
-│                                                    │
+│              Hermes Agent (AI Layer)             │
+│                                                  │
 │  1. AI 解析 NL → 结构化数据                        │
-│  2. 检测触发条件 & 语气                           │
-│  3. 调用脚本 → 重写催款消息                       │
+│  2. 检测触发条件 & 语气                            │
+│  3. 调用脚本 → 重写催款消息                        │
 │  4. 读取/写入 payment_status.json                 │
 │  5. 调用飞书 API 发送消息                          │
 └──────────┬───────────────────────────┬────────────┘
            │                           │
            v                           v
 ┌──────────────────┐    ┌──────────────────────────┐
-│   aa-split.py     │    │   records/ 目录           │
+│   aa-split.py    │    │   records/ 目录           │
 │   (脚本层)        │    │                          │
-│                    │    │  ├── YYYY-MM-DD*.md     │
-│  ・金额计算        │    │  ├── payment_status.json │
-│  ・记录保存        │    │  └── ...                 │
-│  ・JSON/Dry Run    │    └──────────────────────────┘
+│                  │    │  ├── YYYY-MM-DD*.md      │
+│  ・金额计算       │    │  ├── payment_status.json │
+│  ・记录保存       │    │  └── ...                 │
+│  ・JSON/Dry Run  │    └──────────────────────────┘
 └──────────────────┘
            │
            v
@@ -106,14 +106,14 @@ aa-split-bot 是一个运行在 Hermes Agent 上的智能 Skill，用户只需�
 ├── skill/
 |   ├── SKILL.md                    # 技能主描述（含全部 5 版迭代内容）
 |   ├── scripts/
-│        └── aa-split.py            # 核心 Python 脚本（金额计算 + 记录保存）
-├── references/
-│   └── usage-examples.md           # 使用示例
-├── records/                        # 账单记录目录（自动生成）
-│   ├── 2026-07-11_204933.md
-│   ├── 2026-07-11_210023.md
-│   ├── payment_status.json         # 支付状态追踪文件
-│   └── ...
+│       └── aa-split.py            # 核心 Python 脚本（金额计算 + 记录保存）
+|   ├── references/
+│       └── usage-examples.md           # 使用示例
+|   ├── records/                        # 账单记录目录（自动生成）
+│       ├── 2026-07-11_204933.md
+│       ├── 2026-07-11_210023.md
+│       ├── payment_status.json         # 支付状态追踪文件
+│       └── ...
 ├── data/
 │   └── test_samples.md             # 测试样本数据
 ├── tests/
